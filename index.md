@@ -8,11 +8,12 @@ output:
 
 ## Welcome!
 
-Welcome to the Atlanta R Users Group site. 
+Welcome to the Atlanta R Users Group site, where we will maintain an archive of presentations given at our regular users group meetings. 
 
 |Date|Presenter|Presentation|
 |:---------|:---|:---- |
 |28 January 2021|Len Greski|[Reading Fixed Files in R](https://bit.ly/2ZgadgR)|
+|21 December 2020| Steve Pittard|[Predictive Modeling](http://bit.ly/3qp2IA7)|
 
 
 
