@@ -8,7 +8,7 @@ output:
 
 ## Welcome!
 
-Welcome to the Atlanta R Users Group site, where we will maintain an archive of presentations given at our regular users group meetings. 
+Welcome to the Atlanta R Users Group site, where we will maintain an archive of presentations given at our monthly users group meetings. 
 
 |Date|Presenter|Presentation|
 |:---------|:---|:---- |
