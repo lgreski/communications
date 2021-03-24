@@ -18,7 +18,8 @@ system.time(simulation_df <- do.call(rbind,
 dim(simulation_df)
 head(simulation_df)
 table(simulation_df$observed_p)
-hist(simulation_df$observed_p,main="10,000 Bernoulli Trials of N=5")
+hist(simulation_df$observed_p,main="10,000 Bernoulli Trials of N=5, p=0.5",
+     xlab="Observed p-value")
 # calculate coverage: % of simulations where actual p is within
 # Wald confidence limits generated via simulation
 sum(simulation_df$p_value > simulation_df$lower.Wald & 
