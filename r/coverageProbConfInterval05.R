@@ -52,6 +52,7 @@ head(results,n=11)
 library(ggplot2)
 p <- ggplot(data = results,aes(x = avg_observed_p, y = coverage_pct)) + geom_line()
 p + facet_wrap(~sample_size) + ylim(0,100) + 
+        geom_hline(yintercept = 95, color = "red") +
         xlab("Average Observed p-value") + 
         ylab("Coverage Percentage") + 
      ggtitle("Coverage Percentages by Observed p-values by Sample Size: Wald Method")
@@ -75,5 +76,8 @@ system.time(results <-
                                        }, c(0.01, 0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,.99))))
 
 p <- ggplot(data = results,aes(x = avg_observed_p, y = coverage_pct)) + geom_line()
-p + facet_wrap(~sample_size) + ylim(0,100) + xlab("Average Observed p-value") + ylab("Coverage Percentage") + 
+p + facet_wrap(~sample_size) + ylim(0,100) + 
+        geom_hline(yintercept = 95, color = "red") +
+        xlab("Average Observed p-value") + 
+        ylab("Coverage Percentage") + 
      ggtitle("Coverage Percentages by Observed p-values by Sample Size: Adjusted Wald Method")
