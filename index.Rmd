@@ -27,9 +27,11 @@ Register at [Meetup.com](https://bit.ly/3c4TJOu) to receive the videoconference 
 
 |Date|Presenter|Presentation|
 |:---------|:---|:---- |
+|25 March 2021|[Melinda Higgins, Ph.D.](http://bit.ly/3eYC7XL)|[Reproducibility with the Rmarkdown / Knitr Ecosystem](https://bit.ly/3cmtWmo)|
+|25 March 2021|[Len Greski](https://bit.ly/3kPEgpf)|[Debugging R Code: Monte Carlo Simulations of Bernoulli Trials](https://bit.ly/3damdqV)<br>[R code](https://bit.ly/3feEEgO)|
 |25 February 2021|Rob Gordon|[An Introduction to Web Scraping in R](http://bit.ly/3qWogUR)<br><br> [Github site](http://bit.ly/3uJ3x9E)|
 |25 February 2021|John Hackett|[RODBC](http://bit.ly/3dMPppD)|
-|28 January 2021|Len Greski|[Reading Fixed Files in R](https://bit.ly/2ZgadgR)|
+|28 January 2021|[Len Greski](https://bit.ly/3kPEgpf)|[Reading Fixed Files in R](https://bit.ly/2ZgadgR)|
 |21 December 2020| Steve Pittard|[Predictive Modeling](http://bit.ly/3qp2IA7)|
 
 
