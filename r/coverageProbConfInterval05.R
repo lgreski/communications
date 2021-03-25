@@ -38,20 +38,22 @@ system.time(results <-
                                                  binomialSimulation(
                                                       p_value = a,
                                                       trial_size = b,
-                                                      sample_size = aSample_size,
+                                                      sample_size = c,
                                                       z_value = d,
                                                       adjWald =
                                                            FALSE
                                                  )
-                                            }, 10000, 5, 1.96))
+                                            }, 10000, aSample_size, 1.96))
                                        }, c(0.01, 0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,.99))))
 
 head(results,n=11)
 
-#
+# line plots faceted by sample size 
 library(ggplot2)
 p <- ggplot(data = results,aes(x = avg_observed_p, y = coverage_pct)) + geom_line()
-p + facet_wrap(~sample_size) + ylim(0,100) + xlab("Average Observed p-value") + ylab("Coverage Percentage") + 
+p + facet_wrap(~sample_size) + ylim(0,100) + 
+        xlab("Average Observed p-value") + 
+        ylab("Coverage Percentage") + 
      ggtitle("Coverage Percentages by Observed p-values by Sample Size: Wald Method")
 
 # rerun with adjusted Wald Method  
@@ -64,12 +66,12 @@ system.time(results <-
                                                  binomialSimulation(
                                                       p_value = a,
                                                       trial_size = b,
-                                                      sample_size = aSample_size,
+                                                      sample_size = c,
                                                       z_value = d,
                                                       adjWald =
                                                            TRUE
                                                  )
-                                            }, 10000, 5, 1.96))
+                                            }, 10000, aSample_size, 1.96))
                                        }, c(0.01, 0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,.99))))
 
 p <- ggplot(data = results,aes(x = avg_observed_p, y = coverage_pct)) + geom_line()
