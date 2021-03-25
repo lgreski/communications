@@ -15,7 +15,7 @@ binomialSimulation <- function(trial_size,p_value,sample_size,z_value,adjWald=FA
      data.frame(sample_size,p_value,avg_observed_p=mean(observed_p),adjWald,coverage_pct)
      
 }
-system.time(aSimulation <- binomialSimulation(10000,0.1,5,1.96,adjWald=FALSE))
+system.time(aSimulation <- binomialSimulation(10000,0.1,5,qnorm(0.975),adjWald=FALSE))
 aSimulation
 
 
@@ -43,7 +43,7 @@ system.time(results <-
                                                       adjWald =
                                                            FALSE
                                                  )
-                                            }, 10000, aSample_size, 1.96))
+                                            }, 10000, aSample_size, qnorm(0.975)))
                                        }, c(0.01, 0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,.99))))
 
 head(results,n=11)
@@ -71,7 +71,7 @@ system.time(results <-
                                                       adjWald =
                                                            TRUE
                                                  )
-                                            }, 10000, aSample_size, 1.96))
+                                            }, 10000, aSample_size, qnorm(0.975)))
                                        }, c(0.01, 0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,.99))))
 
 p <- ggplot(data = results,aes(x = avg_observed_p, y = coverage_pct)) + geom_line()
