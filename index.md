@@ -17,7 +17,7 @@ Please mark your calendar for June 24th from 7:30P - 8:30P ET for our next meeti
 * The Patchwork package: reproducible composites of ggplot2 objects, by [Melinda Higgins, Ph.D.](http://bit.ly/3eYC7XL)
 * Animated charts with R, by Sridhar Sitharaman 
 
-Register at [Meetup.com](https://bit.ly/3c4TJOu) to receive the videoconference information for the meeting. 
+Register at [Meetup.com](https://bit.ly/3q0EYTB) to receive the videoconference information for the meeting. 
 
 ## Presentation Archive
 
